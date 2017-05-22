@@ -1,9 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using APM.WebAPI.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-using APM.WebAPI.Models;
 
 namespace APM.WebAPI
 {
@@ -32,7 +31,7 @@ namespace APM.WebAPI
                 RequireNonLetterOrDigit = true,
                 RequireDigit = true,
                 RequireLowercase = true,
-                RequireUppercase = true,
+                RequireUppercase = true
             };
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)

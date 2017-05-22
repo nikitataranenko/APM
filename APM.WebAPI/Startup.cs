@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using APM.WebAPI;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(APM.WebAPI.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 
 namespace APM.WebAPI
 {
